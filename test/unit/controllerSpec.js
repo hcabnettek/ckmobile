@@ -6,7 +6,7 @@ describe('CKMobile controllers', function() {
       var scope = {},
           ctrl = new indexController(scope);
  
-      expect(scope).toBe(false);
+      expect(scope.foo).toBe(true);
     });
   });
 });

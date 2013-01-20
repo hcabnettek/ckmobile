@@ -8,3 +8,12 @@ angular.module('ckmobile', ['ckmobile.service',
 var ckmobileController = function($scope){
 	
 };
+
+var indexController = function($scope){
+	$scope.foo = true;
+};
+
+var loginController = function($scope){
+	
+};
+

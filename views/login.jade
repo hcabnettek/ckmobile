@@ -3,7 +3,9 @@ extends layout
 block content
 	div(data-role='page')
 		div(data-role='header')
-			h1 Login
+			h1 Login Page
 		div(data-role='content')
-			div(data-role='content')
+			div(ng-controller='loginController')
+				a(href='/index')
+					|Index
 block scripts

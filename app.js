@@ -3,7 +3,10 @@ var express = require('express'),
   path = require('path'),
   config = require('./config'),
   stylus = require('stylus'),
-  url = require('url');
+  url = require('url'),
+  routes = require('./routes'),
+  user = require('./routes/user');
+  
 
 var app = express();
 
@@ -52,9 +55,8 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-var routes = require('./routes');
-
-app.get('/', routes.index);
+app.get('/index', routes.index);
+app.get('/login', user.login);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
