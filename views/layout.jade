@@ -1,14 +1,13 @@
 doctype 5
-html
+html(ng-app='ckmobile')
 	head
 		title= title
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(name="description", content="ckmobile")
 		meta(name="author", content="ck")
-		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css')
-	body
-		block content
+		link(rel='stylesheet', href='/stylesheets/style.css')
 		include partials/js
-		block scripts    
+	body(ng-controller='ckmobileController')
+		block content

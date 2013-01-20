@@ -5,6 +5,6 @@ angular.module('ckmobile', ['ckmobile.service',
 	'ckmobile.directive',
 	'ckmobile.filter']);
 
-var CKMobileController = function($scope){
+var ckmobileController = function($scope){
 	
 };
